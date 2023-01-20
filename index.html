@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THIS IS NOT 404 ERROR!</title>
+<style type="text/css">
+ body {
+ margin:0;
+ padding:0;
+ background:#032a69;
+ text-align:center;
+ direction:rtl;
+ }
+ .text {
+  width:85%;
+  height:40%;
+  font-size:160%;
+  margin-right:8%;
+  padding:10px;
+  background:#FFF59D;
+  font-weight:900;
+ }
+ .text p{
+  text-align:justify;
+  font-size:135%;
+  font-weight:500;
+ }
+ 
+ @media (max-width: 767px) {
+  .text{
+  font-size:80%;
+  font-family: sans-serif;
+  }
+  .text p{
+  font-size:120%;
+  }
+ }
+</style>
+</head>
+<body>
+ <div class="text" >
+  <h1>GEMBOX PLAYSTATION<br>https://www.sistro.my.id<br><br>Halaman ini akan dialihkan secara otomatis<br><br><span id="num" >10</span></h1><br>
+   klik <a href="https://www.sistro.my.id/" > disini</a>&nbsp;jika Anda tidak dialihkan ke halaman .my.id
+ </div>
+ <script type="text/javascript">
+ var num = 10;
+ function change(){
+  document.getElementById("num").innerHTML = num;
+  num--;
+  if(document.getElementById("num").innerHTML=="0"){
+  clearInterval(inter);
+  window.location.assign("https://www.sistro.my.id");
+  }
+ }
+ var inter= setInterval(change,1000);
+  
+ </script>
+</body>
+</html>
